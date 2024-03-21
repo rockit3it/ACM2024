@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>InnoMeds | Sign Up</title>
+  <title>InnoMeds | Sign In</title>
   <meta name="description" content="best website for health care and wellness">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,97 +28,60 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <style>
+      body{
+        background-image: url("./assets/image/ribbon.png");
+        backdrop-filter: blur(3px);
+        background-repeat: no-repeat;
+        background-size: 500px;
+        background-position: -150px;
+      }
+    </style>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light container">
       <a class="navbar-brand" href="#"><img class="logo" src="./assets/image/innomed trans.png" alt="InnoMed"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-
-        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mb-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Drugs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">New Case Files</a>
-            </li>
-
-          </ul>
-        </div>
-        <form class="d-flex">
-          <i>
-            <i class="pro-btn far fa-user-circle"></i>
-          </i>
-        </form>
-      </div>
     </nav>
   </header>
 
-  <!-- ========== Start Sign Up ========== -->
+  <!-- ========== Start Sign In ========== -->
 
+  <div class="mainsignin">
+    <div class="signinleft">
+      <q>Helping those in need is <br> not charity, it's humanity.</q>
+      <p>-Abhijit Naskar</p>
+      <br>
+      <q>I believe that the greatest gift <br> you can give your family and <br> the world is a healthy you.</q>
+      <p>-Joyce Meyer</p>
+      <br>
+      <q>Health and healthcare <br>are not synonymous.</q>
+      <p>-Archelle Georgiou</p>
+      <br>
+      <q>The first wealth is health.</q>
+      <p>-Ralph Waldo Emerson</p>
 
-  <div class="signup-card-container ">
-    <!-- Card 1 -->
-    <div class="signup-card ">
-      <a href="patient.html">
-        <div class="cardimg">
-          <img class="signup-card-image" src="./assets/image/patient signup.jpeg" alt="Card Image 1">
-        </div>
-        <h2 class="signup-card-title">as Patient.</h2>
-        <div class="signup-card-details">
-          <div class="signup-card-details">
-            <p>For every user who is going to use this app for treatment and cure.</p>
-          </div>
-        </div>
-      </a>
     </div>
+    <div class="signinright">
+      <h1>Welcome!</h1>
+      <h5>Sign In to your Account</h5>
+      <input class="Email mt-4 mb-2" type="text" name="Email" placeholder="Enter your email">
+      <br>
+      <input class="psd mb-4" type="password" name="psd" placeholder="Enter your password">
+      <br>
+      <button class="signinbtn mb-5" type="submit">Sign in</button>
+      <hr>
+      <p>Don't have an Account?<u>Create Account</u></p>
 
-    <!-- Card 2 -->
-    <div class="signup-card ">
-      <a href="doctor.html">
-        <img class="signup-card-image" src="./assets/image/doctore and pharma.jpeg" alt="Card Image 2">
-        <h2 class="signup-card-title">as Doctor.</h2>
-        <div class="signup-card-details">
-          <div class="signup-card-details">
-            <p>For every Doctor or Pharmassist who is going to use this app to treat people.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="signup-card ">
-      <a href="hospital">
-        <img class="signup-card-image" src="./assets/image/hospitals.jpg" alt="Card Image 3">
-        <h2 class="signup-card-title">as Hospital.</h2>
-        <div class="signup-card-details">
-          <div class="signup-card-details">
-            <p>For Hospitals and Health Organization.</p>
-          </div>
-        </div>
-      </a>
+      <div class="othsignin">
+        <button class="othbtn mb-4"><img class="sigicon" src="./assets/image/google.png" alt=""> Sign in with google</button>
+        <br>
+        <button class="othbtn"><img class="sigicon" src="./assets/image/apple-logo.png" alt=""> Sign in with apple</button>
+      </div>
     </div>
   </div>
-  <!-- ========== End Sign Up ========== -->
-
-  <div class="signinlink">
-    <h1>
-      Already have an account?
-    </h1>
-    <h3>
-      <a href="sign in.html">Click here to Sign In!</a>
-    </h3>
-  </div>
+  <!-- ========== End Sign In ========== -->
 
   <div class="footermain">
     <footer>

@@ -1,0 +1,223 @@
+const dummyPatients = [
+    {
+      "Name": "John Doe",
+      "Dob": 1978,
+      "Age": 44,
+      "Gender": "Male",
+      "Address": "123 Main St",
+      "City": "New York",
+      "PhoneNumber": 1234567890,
+      "Email": "johndoe@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Jane Smith",
+      "Dob": 1985,
+      "Age": 37,
+      "Gender": "Female",
+      "Address": "456 Elm St",
+      "City": "Los Angeles",
+      "PhoneNumber": 1234567890,
+      "Email": "janesmith@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Michael Johnson",
+      "Dob": 1992,
+      "Age": 30,
+      "Gender": "Male",
+      "Address": "789 Oak Ave",
+      "City": "Chicago",
+      "PhoneNumber": 1234567890,
+      "Email": "michaeljohnson@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Emily Wilson",
+      "Dob": 1980,
+      "Age": 42,
+      "Gender": "Female",
+      "Address": "321 Pine St",
+      "City": "Houston",
+      "PhoneNumber": 1234567890,
+      "Email": "emilywilson@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "David Brown",
+      "Dob": 1975,
+      "Age": 47,
+      "Gender": "Male",
+      "Address": "567 Cedar St",
+      "City": "Phoenix",
+      "PhoneNumber": 1234567890,
+      "Email": "davidbrown@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Sarah Martinez",
+      "Dob": 1990,
+      "Age": 32,
+      "Gender": "Female",
+      "Address": "432 Maple Ave",
+      "City": "Philadelphia",
+      "PhoneNumber": 1234567890,
+      "Email": "sarahmartinez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "James Anderson",
+      "Dob": 1982,
+      "Age": 40,
+      "Gender": "Male",
+      "Address": "876 Birch St",
+      "City": "San Antonio",
+      "PhoneNumber": 1234567890,
+      "Email": "jamesanderson@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Amanda Clark",
+      "Dob": 1973,
+      "Age": 49,
+      "Gender": "Female",
+      "Address": "654 Pineapple St",
+      "City": "San Diego",
+      "PhoneNumber": 1234567890,
+      "Email": "amandaclark@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Daniel White",
+      "Dob": 1987,
+      "Age": 35,
+      "Gender": "Male",
+      "Address": "210 Orange Ave",
+      "City": "Dallas",
+      "PhoneNumber": 1234567890,
+      "Email": "danielwhite@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Jessica Taylor",
+      "Dob": 1979,
+      "Age": 43,
+      "Gender": "Female",
+      "Address": "987 Lemon St",
+      "City": "Austin",
+      "PhoneNumber": 1234567890,
+      "Email": "jessicataylor@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Christopher Rodriguez",
+      "Dob": 1995,
+      "Age": 27,
+      "Gender": "Male",
+      "Address": "543 Cherry St",
+      "City": "Seattle",
+      "PhoneNumber": 1234567890,
+      "Email": "christopherrodriguez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Melissa Hernandez",
+      "Dob": 1984,
+      "Age": 38,
+      "Gender": "Female",
+      "Address": "789 Grape St",
+      "City": "Denver",
+      "PhoneNumber": 1234567890,
+      "Email": "melissahernandez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Matthew Gonzalez",
+      "Dob": 1998,
+      "Age": 24,
+      "Gender": "Male",
+      "Address": "456 Banana St",
+      "City": "Miami",
+      "PhoneNumber": 1234567890,
+      "Email": "matthewgonzalez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Ashley Perez",
+      "Dob": 1988,
+      "Age": 34,
+      "Gender": "Female",
+      "Address": "654 Coconut St",
+      "City": "Atlanta",
+      "PhoneNumber": 1234567890,
+      "Email": "ashleyperez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Ryan Sanchez",
+      "Dob": 1991,
+      "Age": 31,
+      "Gender": "Male",
+      "Address": "321 Peach St",
+      "City": "Boston",
+      "PhoneNumber": 1234567890,
+      "Email": "ryansanchez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Jennifer Rivera",
+      "Dob": 1977,
+      "Age": 45,
+      "Gender": "Female",
+      "Address": "987 Mango St",
+      "City": "Washington",
+      "PhoneNumber": 1234567890,
+      "Email": "jenniferrivera@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Kevin Torres",
+      "Dob": 1983,
+      "Age": 39,
+      "Gender": "Male",
+      "Address": "210 Avocado St",
+      "City": "Chicago",
+      "PhoneNumber": 1234567890,
+      "Email": "kevintorres@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Nicole Ramirez",
+      "Dob": 1976,
+      "Age": 46,
+      "Gender": "Female",
+      "Address": "876 Pear St",
+      "City": "Houston",
+      "PhoneNumber": 1234567890,
+      "Email": "nicoleramirez@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Brandon Barnes",
+      "Dob": 1993,
+      "Age": 29,
+      "Gender": "Male",
+      "Address": "543 Fig St",
+      "City": "Los Angeles",
+      "PhoneNumber": 1234567890,
+      "Email": "brandonbarnes@example.com",
+      "Password" : "1234"
+    },
+    {
+      "Name": "Megan Scott",
+      "Dob": 1989,
+      "Age": 33,
+      "Gender": "Female",
+      "Address": "789 Olive St",
+      "City": "New York",
+      "PhoneNumber": 1234567890,
+      "Email": "brandonbarnes@example.com",
+      "Password" : "1234"
+    },
+];
+    module.exports = {data : dummyPatients};
